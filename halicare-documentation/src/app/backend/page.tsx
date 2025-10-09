@@ -42,10 +42,10 @@ const BackendDocumentation = () => {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { name: "Django 4.2", icon: "🐍" },
-            { name: "DRF", icon: "🔌" },
-            { name: "PostgreSQL", icon: "🐘" },
-            { name: "Heroku", icon: "☁️" }
+            { name: "Django 4.2", icon: "" },
+            { name: "DRF", icon: "" },
+            { name: "PostgreSQL", icon: "" },
+            { name: "Heroku", icon: "" }
           ].map((tech, idx) => (
             <div
               key={idx}
