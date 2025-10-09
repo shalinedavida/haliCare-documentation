@@ -51,7 +51,7 @@ export default function Docs() {
           >
             When a user first opens Halicare, they see the welcome teaser screen:
             <ul className="list-disc ml-6 mt-2 text-gray-700">
-              <li>Message: <strong>"Welcome to Halicare"</strong></li>
+              <li>Message: <strong>&quot;Welcome to Halicare&quot;</strong></li>
               <li>Short description of the platform features</li>
               <li>
                 clicking the  proceed button takes the user to the signup page.
@@ -73,7 +73,7 @@ export default function Docs() {
             Clinicians provide their clinic details:
             <ul className="list-disc ml-6 mt-2 text-gray-700">
               <li>Clinic Name</li>
-              <li>Address & Contact Info</li>
+              <li>Address &amp; Contact Info</li>
               <li>Opening and Closing Hours</li>
             </ul>
           </DocSection>
@@ -152,6 +152,7 @@ export default function Docs() {
   );
 }
 
+
 function DocSection({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
     <div className="flex gap-5 items-start bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
@@ -163,9 +164,3 @@ function DocSection({ title, icon, children }: { title: string; icon: React.Reac
     </div>
   );
 }
-
-
-
-
-
-
