@@ -23,22 +23,24 @@ export default function Docs() {
   return (
     <>
       <Head>
-        <title>Clinic Dashboard - Frontend Documentation</title>
+        <title>Clinic Dashboard - Documentation</title>
       </Head>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <header className="text-center py-20 px-6 bg-gradient-to-b from-blue-950 via-blue-800 to-blue-600 text-white">
+        <header className="text-center py-20 px-6 bg-[#001F54] text-white">
           <h1 className="text-6xl font-extrabold mb-6 tracking-tight">
             Clinic Dashboard - Frontend Documentation
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             Complete guide to the frontend features of the clinician dashboard
           </p>
-          <Link href="/dashboard" className="inline-block">
-            <button className="bg-[#17DFF9] text-[#193479] font-semibold px-10 py-4 rounded-full text-xl hover:scale-105 transition transform flex items-center gap-2">
-              Go to Dashboard <FaArrowRight className="w-5 h-5" />
-            </button>
-          </Link>
+          <a
+            href="https://halicare-gules.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-[#17DFF9] text-[#193479] font-semibold px-10 py-4 rounded-full text-xl hover:scale-105 transition transform gap-2">
+            Go to Dashboard <FaArrowRight className="w-5 h-5" />
+          </a>
         </header>
         <main className="flex-1 max-w-6xl mx-auto px-6 py-20 space-y-12 bg-white text-gray-800">
           <DocSection
@@ -124,7 +126,7 @@ export default function Docs() {
                 Add new services
               </li>
               <li>
-                Action buttons: <FaEdit className="inline-block w-4 h-4 mr-1 text-green-600"/> Edit, <FaTrash className="inline-block w-4 h-4 mr-1 text-red-600"/> Delete
+                Action buttons: <FaEdit className="inline-block w-4 h-4 mr-1 text-green-600" /> Edit, <FaTrash className="inline-block w-4 h-4 mr-1 text-red-600" /> Delete
               </li>
               <li>Edit clinic contact info directly at the top of the page.</li>
               <li>Paginations</li>
