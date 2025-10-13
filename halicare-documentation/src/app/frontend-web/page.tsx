@@ -145,6 +145,7 @@ export default function Docs() {
   );
 }
 
+
 function DocSection({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
     <div className="flex gap-5 items-start bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
