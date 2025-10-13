@@ -1,17 +1,21 @@
 "use client";
 import Image from 'next/image';
-// Removed unused Link import
 import Navbar from '../shared-components/Navbar';
 import Footer from '../shared-components/Footer';
 
 export default function MobileDocumentationPage() {
   return (
+
+    <div className="min-h-screen bg-white"> 
+
     <div className="min-h-screen bg-white pt-20"> 
       <Navbar/>
   
       <section className="bg-[#001F54] text-white py-16 px-4 sm:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Mobile App Technical Documentation</h1>
         <p className="max-w-3xl mx-auto text-lg opacity-90">
+
+          Built with Kotlin for Android, the HaliCare Patient Mobile App empowers users to locate clinics, book appointments,and receive real-time updates all through an intuitive, accessible, and secure interface.
           Built with Kotlin for Android, the HaliCare Patient Mobile App empowers users to locate clinics, book appointments, view health records, and receive real-time updates &mdash; all through an intuitive, accessible, and secure interface.
         </p>
       </section>
@@ -29,6 +33,9 @@ export default function MobileDocumentationPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
             </div>
+
+            <h3 className="text-xl font-semibold mb-2 text-[#001F54]">Core Functionality</h3>
+            <p className="text-gray-700">Locate nearby clinics, book &amp; manage appointments, view service details, and access health tips.</p>
             <h3 className="text-xl font-semibold mb-2">Core Functionality</h3>
             <p className="text-gray-700">Locate nearby clinics, book &amp; manage appointments, view service details, receive notifications, and access health tips.</p>
           </div>
@@ -39,6 +46,8 @@ export default function MobileDocumentationPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9M9 9M15 19v-6a2 2 0 00-2-2h-2a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9M15 9M12 12h.01M12 18h.01M12 6h.01" />
               </svg>
             </div>
+            <h3 className="text-xl font-semibold mb-2 text-[#001F54]">Tech Stack</h3>
+            <p className="text-gray-700">Kotlin, Jetpack Compose, Retrofit, Coroutines.</p>
             <h3 className="text-xl font-semibold mb-2">Tech Stack</h3>
             <p className="text-gray-700">Kotlin, Jetpack Compose, Retrofit, Room, Hilt, Coroutines, MVVM Architecture, Firebase (Auth &amp; Messaging).</p>
           </div>
@@ -49,6 +58,7 @@ export default function MobileDocumentationPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </div>
+            <h3 className="text-xl font-semibold mb-2 text-[#001F54]">Integration</h3>
             <h3 className="text-xl font-semibold mb-2">Integration</h3>
             <p className="text-gray-700">Securely connects to Django REST API for authentication, data fetching, and appointment booking using JWT tokens.</p>
           </div>
