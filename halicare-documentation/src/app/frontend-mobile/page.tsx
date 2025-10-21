@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-
 import Navbar from '../shared-components/Navbar';
 import Footer from '../shared-components/Footer';
 
@@ -12,7 +11,7 @@ export default function MobileDocumentationPage() {
       <section className="bg-[#001F54] text-white py-16 px-4 sm:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Mobile App Technical Documentation</h1>
         <p className="max-w-3xl mx-auto text-lg opacity-90">
-          Built with Kotlin for Android, the HaliCare Patient Mobile App empowers users to locate clinics, book appointments,and receive real-time updates all through an intuitive, accessible, and secure interface.
+          Built with Kotlin for Android, the HaliCare Patient Mobile App empowers users to locate clinics, book appointments, and receive real-time updates all through an intuitive, accessible, and secure interface.
         </p>
       </section>
 
@@ -29,6 +28,7 @@ export default function MobileDocumentationPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
             </div>
+
             <h3 className="text-xl font-semibold mb-2 text-[#001F54]">Core Functionality</h3>
             <p className="text-gray-700">Locate nearby clinics, book &amp; manage appointments, view service details, and access health tips.</p>
           </div>
@@ -58,8 +58,7 @@ export default function MobileDocumentationPage() {
       <section className="py-16 px-4 sm:px-8 bg-gray-50">
         <h2 className="text-3xl font-bold text-[#001F54] mb-6 text-center">UI/UX Implementation</h2>
         <p className="text-gray-700 mb-12 text-center max-w-4xl mx-auto">
-          The HaliCare Android app follows Material Design 3 principles with a focus on accessibility, performance, and intuitive navigation. Key user flows are documented below with implementation context.
-        </p>
+          The HaliCare Android app follows Material Design 3 principles with a focus on accessibility, performance, and intuitive navigation. Key user flows are documented below with implementation context.        </p>
 
         <div className="max-w-6xl mx-auto mb-16">
           <h3 className="text-2xl font-semibold text-[#001F54] mb-8 text-center"> Onboarding &amp; Authentication</h3>
@@ -122,9 +121,9 @@ export default function MobileDocumentationPage() {
           <div className="text-center lg:text-left max-w-4xl mx-auto px-4">
             <h4 className="text-xl font-semibold text-gray-800 mb-3">Authentication Flow</h4>
             <p className="text-gray-600 leading-relaxed">
-              The app supports secure user onboarding via <strong>Sign Up</strong> (phone + password) and returning access via <strong>Sign In</strong>. 
-              Both forms use real-time validation, error handling, and JWT-based authentication with the Django backend. 
-              Passwords are never stored locally; tokens are secured using <code>EncryptedSharedPreferences</code>. 
+              The app supports secure user onboarding via <strong>Sign Up</strong> (phone + password) and returning access via <strong>Sign In</strong>.
+              Both forms use real-time validation, error handling, and JWT-based authentication with the Django backend.
+              Passwords are never stored locally; tokens are secured using <code>EncryptedSharedPreferences</code>.
             </p>
           </div>
         </div>
