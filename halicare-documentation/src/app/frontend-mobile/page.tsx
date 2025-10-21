@@ -6,9 +6,9 @@ import Footer from '../shared-components/Footer';
 
 export default function MobileDocumentationPage() {
   return (
-    <div className="min-h-screen bg-white"> 
-      <Navbar/>
-  
+    <div className="min-h-screen bg-white">
+      <Navbar />
+
       <section className="bg-[#001F54] text-white py-16 px-4 sm:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Mobile App Technical Documentation</h1>
         <p className="max-w-3xl mx-auto text-lg opacity-90">
@@ -60,6 +60,7 @@ export default function MobileDocumentationPage() {
         <p className="text-gray-700 mb-12 text-center max-w-4xl mx-auto">
           The HaliCare Android app follows Material Design 3 principles with a focus on accessibility, performance, and intuitive navigation. Key user flows are documented below with implementation context.
         </p>
+
         <div className="max-w-6xl mx-auto mb-16">
           <h3 className="text-2xl font-semibold text-[#001F54] mb-8 text-center"> Onboarding &amp; Authentication</h3>
 
@@ -90,7 +91,7 @@ export default function MobileDocumentationPage() {
             <div className="transform -rotate-3">
               <div className="w-[280px] relative">
                 <Image
-                  src="/images/Group 366.png"
+                  src="/images/sign-up.png"
                   alt="Sign Up Form"
                   width={280}
                   height={500}
@@ -105,7 +106,7 @@ export default function MobileDocumentationPage() {
             <div className="transform rotate-3">
               <div className="w-[280px] relative">
                 <Image
-                  src="/images/Group 372.png"
+                  src="/images/sign-in.png"
                   alt="Sign In Form"
                   width={280}
                   height={500}
@@ -135,7 +136,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/iPhone 16 Pro Max - 53.png"
+                  src="/images/Find-clinics.png"
                   alt="Location Permission Request"
                   width={300}
                   height={550}
@@ -158,7 +159,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/Group 374.png"
+                  src="/images/counseling.png"
                   alt="Find Clinics List"
                   width={300}
                   height={550}
@@ -181,7 +182,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/iPhone 16 Pro Max - 54.png"
+                  src="/images/clinic-detail.png"
                   alt="Clinic Detail Page"
                   width={300}
                   height={550}
@@ -208,7 +209,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/iPhone 16 Pro Max - 55.png"
+                  src="/images/appointment.png"
                   alt="Book Appointment Calendar"
                   width={300}
                   height={550}
@@ -256,7 +257,7 @@ export default function MobileDocumentationPage() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
