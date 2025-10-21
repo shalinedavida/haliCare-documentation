@@ -5,18 +5,13 @@ import Footer from '../shared-components/Footer';
 
 export default function MobileDocumentationPage() {
   return (
+    <div className="min-h-screen bg-white">
+      <Navbar />
 
-    <div className="min-h-screen bg-white"> 
-
-    <div className="min-h-screen bg-white pt-20"> 
-      <Navbar/>
-  
       <section className="bg-[#001F54] text-white py-16 px-4 sm:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">Mobile App Technical Documentation</h1>
         <p className="max-w-3xl mx-auto text-lg opacity-90">
-
-          Built with Kotlin for Android, the HaliCare Patient Mobile App empowers users to locate clinics, book appointments,and receive real-time updates all through an intuitive, accessible, and secure interface.
-          Built with Kotlin for Android, the HaliCare Patient Mobile App empowers users to locate clinics, book appointments, view health records, and receive real-time updates &mdash; all through an intuitive, accessible, and secure interface.
+          Built with Kotlin for Android, the HaliCare Patient Mobile App empowers users to locate clinics, book appointments, and receive real-time updates all through an intuitive, accessible, and secure interface.
         </p>
       </section>
 
@@ -36,8 +31,6 @@ export default function MobileDocumentationPage() {
 
             <h3 className="text-xl font-semibold mb-2 text-[#001F54]">Core Functionality</h3>
             <p className="text-gray-700">Locate nearby clinics, book &amp; manage appointments, view service details, and access health tips.</p>
-            <h3 className="text-xl font-semibold mb-2">Core Functionality</h3>
-            <p className="text-gray-700">Locate nearby clinics, book &amp; manage appointments, view service details, receive notifications, and access health tips.</p>
           </div>
 
           <div className="bg-gray-100 p-6 rounded-xl shadow-md text-center">
@@ -48,8 +41,6 @@ export default function MobileDocumentationPage() {
             </div>
             <h3 className="text-xl font-semibold mb-2 text-[#001F54]">Tech Stack</h3>
             <p className="text-gray-700">Kotlin, Jetpack Compose, Retrofit, Coroutines.</p>
-            <h3 className="text-xl font-semibold mb-2">Tech Stack</h3>
-            <p className="text-gray-700">Kotlin, Jetpack Compose, Retrofit, Room, Hilt, Coroutines, MVVM Architecture, Firebase (Auth &amp; Messaging).</p>
           </div>
 
           <div className="bg-gray-100 p-6 rounded-xl shadow-md text-center">
@@ -59,7 +50,6 @@ export default function MobileDocumentationPage() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-2 text-[#001F54]">Integration</h3>
-            <h3 className="text-xl font-semibold mb-2">Integration</h3>
             <p className="text-gray-700">Securely connects to Django REST API for authentication, data fetching, and appointment booking using JWT tokens.</p>
           </div>
         </div>
@@ -68,8 +58,8 @@ export default function MobileDocumentationPage() {
       <section className="py-16 px-4 sm:px-8 bg-gray-50">
         <h2 className="text-3xl font-bold text-[#001F54] mb-6 text-center">UI/UX Implementation</h2>
         <p className="text-gray-700 mb-12 text-center max-w-4xl mx-auto">
-          The HaliCare Android app follows Material Design 3 principles with a focus on accessibility, performance, and intuitive navigation. Key user flows are documented below with implementation context.
-        </p>
+          The HaliCare Android app follows Material Design 3 principles with a focus on accessibility, performance, and intuitive navigation. Key user flows are documented below with implementation context.        </p>
+
         <div className="max-w-6xl mx-auto mb-16">
           <h3 className="text-2xl font-semibold text-[#001F54] mb-8 text-center"> Onboarding &amp; Authentication</h3>
 
@@ -100,7 +90,7 @@ export default function MobileDocumentationPage() {
             <div className="transform -rotate-3">
               <div className="w-[280px] relative">
                 <Image
-                  src="/images/Group 366.png"
+                  src="/images/sign-up.png"
                   alt="Sign Up Form"
                   width={280}
                   height={500}
@@ -115,7 +105,7 @@ export default function MobileDocumentationPage() {
             <div className="transform rotate-3">
               <div className="w-[280px] relative">
                 <Image
-                  src="/images/Group 372.png"
+                  src="/images/sign-in.png"
                   alt="Sign In Form"
                   width={280}
                   height={500}
@@ -131,10 +121,9 @@ export default function MobileDocumentationPage() {
           <div className="text-center lg:text-left max-w-4xl mx-auto px-4">
             <h4 className="text-xl font-semibold text-gray-800 mb-3">Authentication Flow</h4>
             <p className="text-gray-600 leading-relaxed">
-              The app supports secure user onboarding via <strong>Sign Up</strong> (phone + password) and returning access via <strong>Sign In</strong>. 
-              Both forms use real-time validation, error handling, and JWT-based authentication with the Django backend. 
-              Passwords are never stored locally; tokens are secured using <code>EncryptedSharedPreferences</code>. 
-              The “Forgot Password” flow triggers Firebase Auth email recovery.
+              The app supports secure user onboarding via <strong>Sign Up</strong> (phone + password) and returning access via <strong>Sign In</strong>.
+              Both forms use real-time validation, error handling, and JWT-based authentication with the Django backend.
+              Passwords are never stored locally; tokens are secured using <code>EncryptedSharedPreferences</code>.
             </p>
           </div>
         </div>
@@ -146,7 +135,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/iPhone 16 Pro Max - 53.png"
+                  src="/images/Find-clinics.png"
                   alt="Location Permission Request"
                   width={300}
                   height={550}
@@ -169,7 +158,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/Group 374.png"
+                  src="/images/counseling.png"
                   alt="Find Clinics List"
                   width={300}
                   height={550}
@@ -192,7 +181,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/iPhone 16 Pro Max - 54.png"
+                  src="/images/clinic-detail.png"
                   alt="Clinic Detail Page"
                   width={300}
                   height={550}
@@ -219,7 +208,7 @@ export default function MobileDocumentationPage() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/iPhone 16 Pro Max - 55.png"
+                  src="/images/appointment.png"
                   alt="Book Appointment Calendar"
                   width={300}
                   height={550}
@@ -267,7 +256,7 @@ export default function MobileDocumentationPage() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
